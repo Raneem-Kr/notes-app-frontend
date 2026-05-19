@@ -13,7 +13,7 @@ function Register() {
 
     try {
       const response = await axios.post(
-        "https://notes-app-backend-6vkp.onrender.com/api/auth/register",
+        "https://notes-app-backend.onrender.com/api/auth/register",
         {
           name,
           email,

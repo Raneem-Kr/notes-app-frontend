@@ -12,7 +12,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "https://notes-app-backend-6vkp.onrender.com/api/auth/login",
+        "https://notes-app-backend.onrender.com/api/auth/login",
         {
           email,
           password,

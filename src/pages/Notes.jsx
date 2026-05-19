@@ -31,7 +31,7 @@ function Notes() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "https://notes-app-backend-6vkp.onrender.com//api/notes",
+        "https://notes-app-backend.onrender.com/api/notes",
         {
           headers: {
             authorization: token,
@@ -50,7 +50,7 @@ function Notes() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "https://notes-app-backend-6vkp.onrender.com/api/notes",
+        "https://notes-app-backend.onrender.com/api/notes",
         {
           title,
           content,
@@ -80,7 +80,7 @@ function Notes() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `https://notes-app-backend-6vkp.onrender.com/api/notes/${id}`,
+        `https://notes-app-backend.onrender.com/api/notes/${id}`,
         {
           headers: {
             authorization: token,
@@ -110,7 +110,7 @@ function Notes() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `https://notes-app-backend-6vkp.onrender.com/api/notes/${editingId}`,
+        `https://notes-app-backend.onrender.com/api/notes/${editingId}`,
         {
           title,
           content,
@@ -218,7 +218,7 @@ function Notes() {
               onClick={createNote}
               className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition"
             >
-             Create Note
+              Create Note
             </button>
           </div>
         </div>
